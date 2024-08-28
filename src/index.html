@@ -1,0 +1,124 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TAILWIND CSS</title>
+  <link rel="stylesheet" href="./build.css" type="text/css"/>
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+</head>
+<body class="text-gray-700">
+  <div class="grid md:grid-cols-3">
+    <div class="md:col-span-1 md:flex md: justify-end">
+      <nav class="mt20 relative z-10">
+        <div class="flex justify-between items-center">
+          <h1 class="font-bold uppercase p-4 border-b border-gray-100">
+            <a href="/" class="text-sm lg:text-xl text-gray-400 hover:text-gray-700">Food Ninja</a>
+          </h1>
+          <div class="md:hidden cursor-pointer">
+            <svg  class="w-10" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+            </svg>
+          </div>
+        </div>
+        <ul class="text-gray-700 font-bold md:mr-3 md:block md:relative absolute top-10 right-0 bg-white md:bg-transparent w-max">
+          <li class="nav">
+            <a href="#" class="flex justify-end">
+              <span>Home</span>
+              <svg class="w-6 ml-3" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"></path>
+              </svg>
+            </a>
+          </li>
+          <li class="nav">
+            <a href="#" class="flex justify-end">
+              <span>About</span>
+              <svg class="w-6 ml-3" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z"></path>
+              </svg>
+            </a>
+          </li>
+          <li class="nav">
+            <a href="#" class="flex justify-end">
+              <span>Contact</span>
+              <svg class="w-6 ml-3" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"></path>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  
+    <main class="px-16 py-6 bg-gray-100 md:col-span-2">
+      <div class="flex justify-center md:justify-end">
+        <a href="#" class="text-primary btn border-primary md:border-2 hover:bg-primary hover:text-white">Log in</a>
+        <a href="#" class="text-primary ml-2 btn border-primary md:border-2 hover:bg-primary hover:text-white">Sign up</a>
+      </div>
+
+      <header>
+        <h2 class="text-gray-700 text-6xl font-semibold">Recipes</h2>
+        <h3 class="text-gray-700 text-2xl font-semibold">For Ninjas</h3>
+      </header>
+
+      <div>
+        <h4 class="font-bold mt-10 pb-2 border-b border-gray-200">Latest Recipes</h4>
+  
+        <div class="grid lg:grid-cols-3 gap-10">
+          <!-- cards go here -->
+          <div class="card lg:mr-4"> 
+            <img src="img/stew.jpg" alt="stew" class="w-full h-32 sm:h-48 object-cover">
+            <div class="m-4">
+              <span class="font-bold">5 Bean Chili Stew</span>
+              <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+            </div>
+            <div class="badge">
+              <svg class="w-6 pr-2" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"></path>
+              </svg>
+              <span>18 mins </span>
+            </div>
+          </div>
+
+          <div class="card lg:mr-4"> 
+            <img src="img/curry.jpg" alt="curry" class="w-full h-32 sm:h-48 object-cover">
+            <div class="m-4">
+              <span class="font-bold">2 bean Curry</span>
+              <span class="block text-gray-500 text-sm">Recipe by Dude</span>
+            </div>
+            <div class="badge">
+              <svg class="w-6 pr-2" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"></path>
+              </svg>
+              <span>45 mins </span>
+            </div>
+          </div>
+
+          <div class="card mb-6">
+            <img src="img/noodles.jpg" alt="noodles" class="w-full h-32 sm:h-48 object-cover">
+            <div class="m-4">
+              <span class="font-bold">Light Noodles</span>
+              <span class="block text-gray-500 text-sm">Recipe by Dude</span>
+            </div>
+            <div class="badge">
+              <svg class="w-6 pr-2" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"></path>
+              </svg>
+              <span>24 mins </span>
+            </div>
+          </div>
+        </div>
+
+        <h4 class="font-bold mt-10 pb-2 border-b border-gray-200">Most Popular</h4>
+        <div>
+          <!-- cards go here -->
+        </div>
+      </div>
+
+      <div class="flex justify-center">
+        <div class="bg-secondary-200 text-secondary-100 btn hover:bg-secondary-100 hover:text-white">Load more</div>
+      </div>    
+    </main>
+  </div>
+
+</body>
+</html>
